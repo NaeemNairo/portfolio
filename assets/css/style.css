@@ -300,9 +300,8 @@ p { margin: 0; }
 }
 
 /* ---------- Headline highlight ---------- */
-/* Class name kept for compatibility; now a solid accent color in capitals */
+/* Class name kept for compatibility; solid accent color */
 .text-gradient {
   color: var(--accent);
-  text-transform: uppercase;
   letter-spacing: -.01em;
 }
