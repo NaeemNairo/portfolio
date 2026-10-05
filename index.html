@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naeem | Biomedical &amp; Mechatronics Engineer</title>
+  <meta name="description" content="Research portfolio of Naeem, biomedical and mechatronics engineer working on prosthetic hands, assistive robotics, and biomechanical modeling.">
+  <meta property="og:title" content="Naeem | Research Portfolio">
+  <meta property="og:description" content="Prosthetic hands, assistive robotics, and the models that test them before they are built.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Naeem, home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Naeem</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Open menu</span>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Main">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#analysis">Analysis</a>
+        <a href="#background">Background</a>
+        <a href="#skills">Skills</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">PhD applicant · Robotics &amp; Biomedical Engineering</p>
+          <h1>Building prosthetic hands that grasp the way people expect.</h1>
+          <p class="lead">I'm Naeem, a biomedical and mechatronics engineer and Fulbright Scholar at the University of New Haven. I design assistive devices, model them before they are built, and test how well they work.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="assets/cv.pdf">Download CV</a>
+          </div>
+          <ul class="hero-facts" aria-label="Highlights">
+            <li><strong>MS</strong><span>Biomedical Eng.</span></li>
+            <li><strong>BS</strong><span>Mechatronics Eng.</span></li>
+            <li><strong>CSWE</strong><span>SOLIDWORKS Expert</span></li>
+          </ul>
+        </div>
+        <figure class="hero-photo">
+          <!-- Replace assets/img/profile.svg with your photo (e.g. profile.jpg, square, ~800px) -->
+          <img src="assets/img/profile.svg" alt="Portrait of Naeem" width="420" height="420">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Research focus</p>
+          <h2 id="research-title">Control, mechanism, and feedback, designed together</h2>
+          <p>Most upper-limb prosthetics struggle with everyday tasks because the control signal, the hand mechanism, and the user's feedback are designed separately. My goal is to study them as one system.</p>
+        </div>
+        <div class="cards-3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 12h3l2-6 4 12 2-6h7"/></svg>
+            </div>
+            <h3>Myoelectric control</h3>
+            <p>How muscle signals map to grasp type and grip force, and how to make that mapping robust in daily use.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 21V11M11 21V5M15 21V7M19 21v-8M7 11a2 2 0 1 1 0-.01M11 5a2 2 0 1 1 0-.01"/></svg>
+            </div>
+            <h3>Dexterous grasping</h3>
+            <p>Finger linkages and tendon routing that shape contact with real objects, from cups to keys.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0-6 0"/></svg>
+            </div>
+            <h3>Sensory feedback</h3>
+            <p>What a user needs to feel from the hand to trust the grip without watching it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS (image gallery with filters) ============
+         To add a project: copy one <article class="project">, set data-category
+         (prosthetics | controls | modeling | vision) and swap the image. -->
+    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="projects-title">Projects</h2>
+          <p>Each project starts with a question, uses a model to test it, and ends with a design change.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-filter="prosthetics" aria-pressed="false">Prosthetics</button>
+          <button type="button" class="filter" data-filter="controls" aria-pressed="false">Controls</button>
+          <button type="button" class="filter" data-filter="modeling" aria-pressed="false">Modeling</button>
+          <button type="button" class="filter" data-filter="vision" aria-pressed="false">Vision</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project" data-category="prosthetics">
+            <img src="assets/img/grapgrow.svg" alt="Placeholder illustration of a modular prosthetic arm" width="640" height="400" loading="lazy">
+            <div class="project-body">
+              <p class="project-tag">Prosthetics · Featured</p>
+              <h3>GrapGrow</h3>
+              <p>A modular, 3D-printed pediatric prosthetic arm that can be resized by swapping parts as the child grows, so the whole device doesn't need rebuilding.</p>
+              <ul class="tags"><li>SOLIDWORKS</li><li>3D printing</li><li>Anthropometrics</li></ul>
+            </div>
+          </article>
+
+          <article class="project" data-category="prosthetics">
+            <img src="assets/img/kneenova.svg" alt="Placeholder illustration of a four-bar prosthetic knee" width="640" height="400" loading="lazy">
+            <div class="project-body">
+              <p class="project-tag">Prosthetics</p>
+              <h3>KneeNova</h3>
+              <p>A biomimetic prosthetic knee that uses a crossed four-bar linkage to recreate the moving center of rotation of the natural knee.</p>
+              <ul class="tags"><li>Linkage synthesis</li><li>Kinematics</li><li>Gait</li></ul>
+            </div>
+          </article>
+
+          <article class="project" data-category="modeling">
+            <img src="assets/img/microneedle.svg" alt="Placeholder heatmap of insulin diffusing from microneedles" width="640" height="400" loading="lazy">
+            <div class="project-body">
+              <p class="project-tag">Modeling · BIOM 6645</p>
+              <h3>Microneedle insulin delivery</h3>
+              <p>A 2D finite-difference model of insulin diffusing from a microneedle array, used to study how needle spacing affects coverage.</p>
+              <ul class="tags"><li>MATLAB</li><li>PDEs</li><li>Drug delivery</li></ul>
+            </div>
+          </article>
+
+          <article class="project" data-category="controls">
+            <img src="assets/img/spinilibrium.svg" alt="Placeholder illustration of a rotary inverted pendulum" width="640" height="400" loading="lazy">
+            <div class="project-body">
+              <p class="project-tag">Controls</p>
+              <h3>Spinilibrium</h3>
+              <p>A rotary inverted pendulum balanced by a microcontroller. The controller was designed in Simulink and checked against measured data.</p>
+              <ul class="tags"><li>Simulink</li><li>State feedback</li><li>Embedded C++</li></ul>
+            </div>
+          </article>
+
+          <article class="project" data-category="prosthetics">
+            <img src="assets/img/dexhand.svg" alt="Placeholder illustration of a robotic hand" width="640" height="400" loading="lazy">
+            <div class="project-body">
+              <p class="project-tag">Prosthetics · Open source</p>
+              <h3>DexHand contributions</h3>
+              <p>Contributions to the open-source DexHand robotic hand: CAD organization, finger mechanism review, and reproducibility notes.</p>
+              <ul class="tags"><li>Robotic hands</li><li>CAD</li><li>Open source</li></ul>
+            </div>
+          </article>
+
+          <article class="project" data-category="vision">
+            <img src="assets/img/handtracking.svg" alt="Placeholder illustration of hand landmark tracking" width="640" height="400" loading="lazy">
+            <div class="project-body">
+              <p class="project-tag">Vision</p>
+              <h3>Hand-tracking video control</h3>
+              <p>MediaPipe hand landmarks map how open the hand is to video position. An early test of continuous gesture control.</p>
+              <ul class="tags"><li>Python</li><li>MediaPipe</li><li>HCI</li></ul>
+            </div>
+          </article>
+        </div>
+        <p class="empty-note" hidden>No projects in this category yet.</p>
+      </div>
+    </section>
+
+    <!-- ============ ANALYSIS (interactive figures) ============ -->
+    <section class="section" id="analysis" aria-labelledby="analysis-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Analysis</p>
+          <h2 id="analysis-title">Interactive models</h2>
+          <p>Simplified versions of the models behind three projects. Move the sliders to see how each design responds.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Models">
+          <button role="tab" id="tab-diff" aria-controls="panel-diff" aria-selected="true">Diffusion</button>
+          <button role="tab" id="tab-knee" aria-controls="panel-knee" aria-selected="false" tabindex="-1">Knee linkage</button>
+          <button role="tab" id="tab-pend" aria-controls="panel-pend" aria-selected="false" tabindex="-1">Pendulum control</button>
+        </div>
+
+        <div class="figure-panel" role="tabpanel" id="panel-diff" aria-labelledby="tab-diff">
+          <canvas id="cDiff" width="900" height="360" role="img" aria-label="Concentration map of insulin diffusing from microneedle tips"></canvas>
+          <div class="controls">
+            <label for="nNeed">Needles <output for="nNeed" id="oNeed">4</output></label>
+            <input id="nNeed" type="range" min="2" max="7" value="4">
+            <label for="tDiff">Time steps <output for="tDiff" id="oDiff">300</output></label>
+            <input id="tDiff" type="range" min="10" max="900" step="10" value="300">
+          </div>
+          <p class="caption"><strong>Fig. 1</strong> Explicit finite-difference solution of ∂C/∂t = D∇²C in dimensionless units. The skin surface is at the top, and needle tips are held at C = 1. With fewer needles, low-concentration gaps open up between them.</p>
+        </div>
+
+        <div class="figure-panel" role="tabpanel" id="panel-knee" aria-labelledby="tab-knee" hidden>
+          <canvas id="cKnee" width="900" height="380" role="img" aria-label="Four-bar knee linkage and the path of its instant center of rotation"></canvas>
+          <div class="controls">
+            <label for="fKnee">Flexion <output for="fKnee" id="oKnee">30°</output></label>
+            <input id="fKnee" type="range" min="0" max="90" value="30">
+          </div>
+          <p class="caption"><strong>Fig. 2</strong> Crossed four-bar knee with illustrative link lengths. The orange dot is the instant center of rotation (ICR), where the two link lines cross. The dotted line shows its path from 0° to 90° of flexion.</p>
+        </div>
+
+        <div class="figure-panel" role="tabpanel" id="panel-pend" aria-labelledby="tab-pend" hidden>
+          <canvas id="cPend" width="900" height="320" role="img" aria-label="Pendulum angle response over time"></canvas>
+          <div class="controls">
+            <label for="kp">K<sub>p</sub> <output for="kp" id="oKp">60</output></label>
+            <input id="kp" type="range" min="10" max="120" value="60">
+            <label for="kd">K<sub>d</sub> <output for="kd" id="oKd">6</output></label>
+            <input id="kd" type="range" min="0" max="20" step="0.5" value="6">
+          </div>
+          <p class="caption"><strong>Fig. 3</strong> Linearized pendulum θ̈ = ω²θ + u, with u = −K<sub>p</sub>θ − K<sub>d</sub>θ̇ and ω² = 30 s⁻², released at 10°. It is stable only when K<sub>p</sub> &gt; ω². This is a teaching model, not hardware data.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BACKGROUND ============ -->
+    <section class="section section-alt" id="background" aria-labelledby="background-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Background</p>
+          <h2 id="background-title">Education &amp; experience</h2>
+        </div>
+          <ol class="timeline">
+            <li>
+              <span class="when">Current</span>
+              <h3>MS, Biomedical Engineering</h3>
+              <p>University of New Haven, Tagliatela College of Engineering · Fulbright Scholar</p>
+            </li>
+            <li>
+              <span class="when">Industry</span>
+              <h3>AHL Logics / AHL Labs</h3>
+              <p>Product development for assistive mobility devices</p>
+            </li>
+            <li>
+              <span class="when">Undergraduate</span>
+              <h3>BS, Mechatronics Engineering</h3>
+              <p>Palestine Polytechnic University</p>
+            </li>
+          </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============
+         Each card = one category. Add or remove <li> items freely.
+         Use <p class="skill-sub"> to split a card into labelled groups. -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Technical skills</h2>
+          <p>The tools and methods I use to take a device from concept to tested prototype.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7zM3 7l9 5 9-5M12 12v10"/></svg></div>
+            <h3>CAD &amp; Mechanical Design</h3>
+            <ul class="skill-list">
+              <li>SOLIDWORKS (CSWE)</li><li>Fusion 360</li><li>Motion studies</li><li>Mechanism design</li><li>Linkage synthesis</li><li>Blender</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V9h12v11M9 9V4h6v5M9 14h6"/></svg></div>
+            <h3>Fabrication &amp; Prototyping</h3>
+            <ul class="skill-list">
+              <li>3D printing (FDM)</li><li>Tendon-driven actuation</li><li>Fit and function testing</li><li>Assembly design</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+            <h3>Programming</h3>
+            <p class="skill-sub">Embedded</p>
+            <ul class="skill-list"><li>C / C++</li><li>STM32 (ARM)</li></ul>
+            <p class="skill-sub">Modeling &amp; data</p>
+            <ul class="skill-list"><li>MATLAB</li><li>Simulink</li><li>Python</li></ul>
+            <p class="skill-sub">Web</p>
+            <ul class="skill-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h4l3-7 3 14 3-7h3"/></svg></div>
+            <h3>Controls &amp; Robotics</h3>
+            <ul class="skill-list">
+              <li>ROS / ROS 2</li><li>PID control</li><li>State feedback</li><li>System identification</li><li>Motor drives</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-4 3 3 5-6"/></svg></div>
+            <h3>Modeling &amp; Analysis</h3>
+            <ul class="skill-list">
+              <li>Finite-difference PDEs</li><li>Kinematics</li><li>Signals &amp; systems</li><li>Computer vision (MediaPipe)</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6zM9 12l2 2 4-4"/></svg></div>
+            <h3>Medical Device Standards</h3>
+            <ul class="skill-list">
+              <li>ISO 13485</li><li>ISO 14971</li><li>IEC 62304</li><li>FDA QMSR</li><li>EU MDR</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let's talk about research</h2>
+            <p>I'm applying to PhD programs in robotics and biomedical engineering, and I welcome conversations with faculty and labs working on prosthetics and dexterous manipulation.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:naeemniro@gmail.com">naeemniro@gmail.com</a>
+            <button class="btn btn-ghost" type="button" id="copy-email" data-email="naeemniro@gmail.com">Copy email</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Naeem · Built with plain HTML, CSS and JavaScript</p>
+      <ul class="footer-links">
+        <!-- Replace the # with your profile URLs -->
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Google Scholar</a></li>
+        <li><a href="mailto:naeemniro@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
