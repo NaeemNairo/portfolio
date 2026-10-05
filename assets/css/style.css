@@ -203,13 +203,24 @@ p { margin: 0; }
 .caption strong { color: var(--ink); font-family: var(--font-mono); font-weight: 500; }
 
 /* ---------- Background ---------- */
-.timeline { list-style: none; margin: 0; padding: 0; max-width: 680px; }
-.timeline li { position: relative; padding: 0 0 32px 28px; border-left: 2px solid var(--border); }
-.timeline li:last-child { padding-bottom: 0; border-left-color: transparent; }
-.timeline li::before { content: ""; position: absolute; left: -7px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
+.timeline { list-style: none; margin: 0; padding: 0; max-width: 760px; }
+.timeline > li { position: relative; padding: 0 0 32px 28px; border-left: 2px solid var(--border); }
+.timeline > li:last-child { padding-bottom: 0; border-left-color: transparent; }
+.timeline > li::before { content: ""; position: absolute; left: -7px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
 .timeline .when { font: 500 .76rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
 .timeline h3 { margin: 8px 0 4px; }
 .timeline p { font-size: .95rem; }
+.timeline .org { color: var(--muted); margin-bottom: 8px; }
+.timeline ul { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 4px; font-size: .95rem; }
+
+/* ---------- Credentials ---------- */
+.cred-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.cred-col { padding: 26px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); min-width: 0; }
+.cred-col h3 { margin-bottom: 12px; }
+.cred-list { list-style: none; margin: 0; padding: 0; }
+.cred-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-top: 1px solid var(--border); font-size: .95rem; color: var(--ink); }
+.cred-list li:first-child { border-top: 0; }
+.cred-list time { flex: none; font: 400 .82rem var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
 
 /* ---------- Skills ---------- */
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -251,6 +262,7 @@ p { margin: 0; }
 @media (max-width: 960px) {
   .project-grid { grid-template-columns: repeat(2, 1fr); }
   .cards-3, .skills-grid { grid-template-columns: 1fr 1fr; }
+  .cred-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 780px) {
