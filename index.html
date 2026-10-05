@@ -34,7 +34,6 @@
       <nav id="nav-menu" class="nav-menu" aria-label="Main">
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
-        <a href="#analysis">Analysis</a>
         <a href="#background">Background</a>
         <a href="#skills">Skills</a>
         <a href="assets/Naeem-Nairo-Resume.pdf">Résumé</a>
@@ -183,54 +182,6 @@
           </article>
         </div>
         <p class="empty-note" hidden>No projects in this category yet.</p>
-      </div>
-    </section>
-
-    <!-- ============ ANALYSIS (interactive figures) ============ -->
-    <section class="section" id="analysis" aria-labelledby="analysis-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Analysis</p>
-          <h2 id="analysis-title">Interactive models</h2>
-          <p>Simplified versions of the models behind three projects. Move the sliders to see how each design responds.</p>
-        </div>
-
-        <div class="tabs" role="tablist" aria-label="Models">
-          <button role="tab" id="tab-diff" aria-controls="panel-diff" aria-selected="true">Diffusion</button>
-          <button role="tab" id="tab-knee" aria-controls="panel-knee" aria-selected="false" tabindex="-1">Knee linkage</button>
-          <button role="tab" id="tab-pend" aria-controls="panel-pend" aria-selected="false" tabindex="-1">Pendulum control</button>
-        </div>
-
-        <div class="figure-panel" role="tabpanel" id="panel-diff" aria-labelledby="tab-diff">
-          <canvas id="cDiff" width="900" height="360" role="img" aria-label="Concentration map of insulin diffusing from microneedle tips"></canvas>
-          <div class="controls">
-            <label for="nNeed">Needles <output for="nNeed" id="oNeed">4</output></label>
-            <input id="nNeed" type="range" min="2" max="7" value="4">
-            <label for="tDiff">Time steps <output for="tDiff" id="oDiff">300</output></label>
-            <input id="tDiff" type="range" min="10" max="900" step="10" value="300">
-          </div>
-          <p class="caption"><strong>Fig. 1</strong> Explicit finite-difference solution of ∂C/∂t = D∇²C in dimensionless units. The skin surface is at the top, and needle tips are held at C = 1. With fewer needles, low-concentration gaps open up between them.</p>
-        </div>
-
-        <div class="figure-panel" role="tabpanel" id="panel-knee" aria-labelledby="tab-knee" hidden>
-          <canvas id="cKnee" width="900" height="380" role="img" aria-label="Four-bar knee linkage and the path of its instant center of rotation"></canvas>
-          <div class="controls">
-            <label for="fKnee">Flexion <output for="fKnee" id="oKnee">30°</output></label>
-            <input id="fKnee" type="range" min="0" max="90" value="30">
-          </div>
-          <p class="caption"><strong>Fig. 2</strong> Crossed four-bar knee with illustrative link lengths. The orange dot is the instant center of rotation (ICR), where the two link lines cross. The dotted line shows its path from 0° to 90° of flexion.</p>
-        </div>
-
-        <div class="figure-panel" role="tabpanel" id="panel-pend" aria-labelledby="tab-pend" hidden>
-          <canvas id="cPend" width="900" height="320" role="img" aria-label="Pendulum angle response over time"></canvas>
-          <div class="controls">
-            <label for="kp">K<sub>p</sub> <output for="kp" id="oKp">60</output></label>
-            <input id="kp" type="range" min="10" max="120" value="60">
-            <label for="kd">K<sub>d</sub> <output for="kd" id="oKd">6</output></label>
-            <input id="kd" type="range" min="0" max="20" step="0.5" value="6">
-          </div>
-          <p class="caption"><strong>Fig. 3</strong> Linearized pendulum θ̈ = ω²θ + u, with u = −K<sub>p</sub>θ − K<sub>d</sub>θ̇ and ω² = 30 s⁻², released at 10°. It is stable only when K<sub>p</sub> &gt; ω². This is a teaching model, not hardware data.</p>
-        </div>
       </div>
     </section>
 
