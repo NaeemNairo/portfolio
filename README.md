@@ -25,8 +25,8 @@ assets/img/           Images (the current ones are placeholders)
 |---|---|
 | Your photo | Put `profile.jpg` in `assets/img/` and change `profile.svg` to `profile.jpg` in `index.html` |
 | Project images | Replace the `.svg` files in `assets/img/`, or add `.jpg`/`.png` files and update each `<img src>`. Landscape 16:10 works best (e.g. 1280×800). |
-| CV | Add `assets/cv.pdf` (the "Download CV" button points to it) |
-| LinkedIn / GitHub / Scholar | Footer links in `index.html` (search for `href="#"`) |
+| Résumé | Replace `assets/Naeem-Nairo-Resume.pdf` with a newer version under the same name |
+| LinkedIn | Footer link in `index.html` (search for `href="#"`) |
 
 ## Editing tips
 
