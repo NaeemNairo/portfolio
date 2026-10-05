@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="420" height="420">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9f3f4"/><stop offset="1" stop-color="#cfe3e6"/></linearGradient></defs>
+<rect width="420" height="420" fill="url(#g)"/><circle cx="210" cy="170" r="72" fill="#9fc3c8"/><path d="M70 420c10-90 70-140 140-140s130 50 140 140z" fill="#9fc3c8"/>
+<text x="210" y="396" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#3d5a60">REPLACE WITH YOUR PHOTO</text></svg>
