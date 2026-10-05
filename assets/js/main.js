@@ -68,7 +68,7 @@
       t.tabIndex = on ? 0 : -1;
       $("#" + t.getAttribute("aria-controls")).hidden = !on;
     });
-    drawAll();
+    if (typeof drawAll === "function") drawAll();
   };
   tabs.forEach((t, i) => {
     t.addEventListener("click", () => selectTab(t));
@@ -92,6 +92,8 @@
   /* =========================================================
      FIGURES
      ========================================================= */
+  // Figures are optional: skip this block if the Analysis section isn't on the page
+  if (!document.getElementById("cDiff")) return;
   const font = () => "13px " + cssVar("--font-mono");
 
   /* ----- Fig 1: 2D diffusion from microneedles (explicit FD) ----- */
