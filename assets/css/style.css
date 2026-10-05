@@ -299,12 +299,10 @@ p { margin: 0; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 
-/* ---------- Headline gradient ---------- */
+/* ---------- Headline highlight ---------- */
+/* Class name kept for compatibility; now a solid accent color in capitals */
 .text-gradient {
-  color: var(--accent); /* fallback */
-  background: linear-gradient(100deg, #0d6e7a 0%, #1597a8 45%, #3b7fd9 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: .06em; /* keep descenders from clipping */
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: -.01em;
 }
